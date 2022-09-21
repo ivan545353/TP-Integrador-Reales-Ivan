@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: #353A40;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+body{
+    padding-top: 80px;
+}
+
+/* --------------------Estilos menu de navegación---------------------- */
+.nav{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    background-color: #353A40;
+}
+
+
+.nav-link{
+    color: #8B9497;
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    margin: 15px;
+    background-color: #353A40;
+}
+
+.nav-menu-item{
+    font-size: 16px;
+    margin: 0px;
+    line-height: 3em;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding:33px 30px;
+    border-radius: 8px;
+}
+
+.nav-menu-link:hover{
+    background-color:#292828 ;
+    color: cyan;
+    transition: 0.5s;
+}
+#conferencia:hover{
+    color: cyan;
+}
+#comprar-ticket:hover{
+    color: cyan;
+}
+.logo{
+    height: 4em;
+}
+
+.brand-name-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.brand-name{
+    color: white;
+    font-size: 19px;
+    
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2em;
+    padding: 0 20px;
+    line-height: 60px;
+    display:none;
+    cursor: pointer;
+    
+}
+/* --------------------Estilos menu de navegación---------------------- */
+/*-----------------diseño responsive Menu de navegacion----------------*/
+@media (max-width:1200px ){
+    
+    .header{
+        background-color: #353A40;
+        height: 60px;
+        
+        
+    }
+    
+    .nav-menu{
+        flex-direction:column ;
+        align-items: center;
+        list-style: none;
+        margin-left:0px;
+        background-color: #353A40;
+        backdrop-filter: blur(8px);
+        position: fixed;
+        left: 0px;
+        top: 65px;
+        width: 100%;
+        padding: 20px 0;
+        
+
+        height: calc(100% - 60px);
+        overflow-y:auto;
+
+        left:100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 6em;
+    }
+
+    .nav-link{
+        color: white;
+    }
+    
+    .nav-menu-link{
+        padding:2em 35vw;
+        border-radius: 10px;
+    }
+    
+    .nav-menu-link:hover {
+        background: none;
+        color: cyan;
+    }
+    .nav-menu-link_active:active{
+        background-color: #292828;
+        transition-duration: 10ms;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+
+    .logo{
+        height: 4em;
+    }
+    
+    .brand-name-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-decoration: none;
+        margin:0px
+    }
+    
+    .brand-name{
+        color: white;
+        font-size: 16px;
+        
+    }
+    #ba1{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media (min-width:1170px){
+    #conferencia{
+        color:white;
+    }
+
+    #comprar-ticket{
+        color: green;
+    }
+}
+
+@media (max-width:1300px) and (min-width:1170px){
+    .brand-name-container{
+        margin-left: 0;
+    }
+}
+/*-----------------diseño responsive Menu de navegacion----------------*/
+
+#ba1{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
