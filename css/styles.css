@@ -12,9 +12,6 @@
     left: 0;
     z-index: 999;
   }
-  body {
-
-  }
   
   /* --------------------Estilos menu de navegación---------------------- */
   .nav {
@@ -22,6 +19,14 @@
     height: 80px;
     justify-content: space-between;
     background-color: #353a40;
+  }
+
+  #conferencia {
+    color: white;
+  }
+
+  #comprar-ticket {
+    color: green;
   }
   
   .nav-link {
@@ -87,115 +92,12 @@
     display: none;
     cursor: pointer;
   }
-  /* --------------------Estilos menu de navegación---------------------- */
-  /*-----------------diseño responsive Menu de navegacion----------------*/
-  @media (max-width: 1200px) {
-    .header {
-      background-color: #353a40;
-      height: 60px;
-    }
-  
-    .nav-menu {
-      flex-direction: column;
-      align-items: center;
-      list-style: none;
-      margin-left: 0px;
-      background-color: #353a40;
-      backdrop-filter: blur(8px);
-      position: fixed;
-      left: 0px;
-      top: 65px;
-      width: 100%;
-      padding: 20px 0;
-  
-      height: calc(100% - 60px);
-      overflow-y: auto;
-  
-      left: 100%;
-      transition: left 0.3s;
-    }
-  
-    .nav-menu-item {
-        border-bottom: solid;
-        width: 100vw;
-        line-height: 3em;
-        padding: 0 2em;
-    }
-  
-    .nav-link {
-      color: white;
-    }
-  
-    .nav-menu-link {
-      width: 100%;
-      display: flex;
-      border-radius: 10px;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .nav-menu-link:hover {
-      background: none;
-      color: cyan;
-    }
-    .nav-menu-link_active:active {
-      background-color: #292828;
-      transition-duration: 10ms;
-    }
-  
-    .nav-toggle {
-      display: block;
-    }
-  
-    .nav-menu_visible {
-      left: 0;
-    }
-  
-    .logo {
-      height: 4em;
-    }
-  
-    .brand-name-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      text-decoration: none;
-      margin: 0px;
-    }
-  
-    .brand-name {
-      color: white;
-      font-size: 16px;
-    }
-    #ba1 {
-      height: 100vh;
-      width: 100vw;
-    }
-  }
-  
-  @media (min-width: 1170px) {
-    #conferencia {
-      color: white;
-    }
-  
-    #comprar-ticket {
-      color: green;
-    }
-  }
-  
-  @media (max-width: 1300px) and (min-width: 1170px) {
-    .brand-name-container {
-      margin-left: 0;
-    }
-  }
-  /*-----------------diseño responsive Menu de navegacion----------------*/
  
+  
  
-  /*-----------------diseño section1--------------------*/
+  /*-----------------Estilos section1--------------------*/
 
-  #ba1{ /* posicionamiento del fondo y estilo del fondo */
+  #ba1{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -206,14 +108,14 @@
     filter:brightness(50%)
   }
 
- .container1{/* posicionamiento del container */
+ .container1{
     position: absolute;
     top: 43%;
     right: 10%;
     z-index: 3;
     max-width: 26vw;
   }
-/* Estilizado del container */
+
 .container1 p{
   color: white;
   text-align: right;
@@ -269,10 +171,117 @@
 }
 
 
-/* Estilizado del container */
-/*-----------------diseño section1--------------------*/
 
 
+
+
+/*-------------------Diseño Responsive-------------------------*/
+@media (max-width: 992px) {
+  .header {
+    background-color: #353a40;
+    height: 60px;
+  }
+ /*-----------------diseño responsive Menu de navegacion----------------*/
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-left: 0px;
+    background-color: #353a40;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    left: 0px;
+    top: 65px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+      border-bottom: solid;
+      width: 100vw;
+      line-height: 3em;
+      padding: 0 2em;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-menu-link {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: cyan;
+  }
+  .nav-menu-link_active:active {
+    background-color: #292828;
+    transition-duration: 10ms;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .logo {
+    height: 4em;
+  }
+
+  .brand-name-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px;
+  }
+
+  .brand-name {
+    color: white;
+    font-size: 16px;
+  }
+
+  /*-------------------Section 1 Responsive-------------------------*/
+  body{
+    background: red;
+  }
+
+  .container1{
+    top: 25vh;
+    right: 15vw;
+    max-width: 75%;
+  }
+
+  .container1 p{
+    text-align: justify;
+  }
+  
+  .container1 h1{
+    text-align: center;
+
+  }
+
+  .container1 .container-button{
+    justify-content: center;
+  }
+
+}
 
 
 
