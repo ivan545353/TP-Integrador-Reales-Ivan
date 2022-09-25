@@ -75,7 +75,7 @@
     flex-wrap: nowrap;
     align-items: center;
     text-decoration: none;
-    margin-left: 100px;
+    margin-left: 0px;
   }
   
   .brand-name {
@@ -176,8 +176,9 @@
 
  .cards{
   display: grid;
-  grid-template-columns: 25vw 25vw 25vw ;
+  grid-template-columns: 20vw 20vw 20vw ;
   justify-content: center;
+  column-gap: 20px;
 }
 
 .card{
@@ -238,6 +239,7 @@
 
 .details p{
   line-height: 1.5;
+  text-align: justify;
 }
 
 .details h3{
@@ -391,8 +393,47 @@ textarea::placeholder{
 .row .input-group1{
   flex-basis: 48%;
 }
+.section4{
+  height: 50vh;
+}
+
+.section4 h3{
+  margin-top: 70px;
+}
+/* --------------------Estilos footer---------------------- */
 
 
+#footer{
+  width: 100%;
+  background-color: #1D3947;
+}
+
+.footer-items ol{
+  width: 100%;
+  list-style: none;
+  padding: 2em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:4em;
+}
+.footer-items ol li{
+  margin: 0;
+  text-align: center;
+  transition: .5s;
+}
+.footer-items ol li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+
+  border-radius: 10px;
+ 
+}
+.footer-items ol li:hover{
+  transform: translate(0px, -10px);
+}
 
 /*-------------------Diseño Responsive-------------------------*/
 @media (max-width: 992px) {
@@ -532,9 +573,6 @@ textarea::placeholder{
     font-size: 16px;
   }
  /*-----------------Section 4 responsive----------------*/
-
-
-
 .tittle-form{
   line-height: 1.5;
 }
@@ -543,3 +581,14 @@ form{
   width: 75vw;
 }
 
+
+ /*-----------------Footer Responsive----------------*/
+#footer{
+  width: 100%;
+  background-color: #1D3947;
+}
+
+.footer-items ol{
+  flex-direction: column;
+  gap:1.5em;
+}
