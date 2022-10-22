@@ -1,4 +1,5 @@
-const navToggle = document.querySelector(".nav-toggle") // Este script cumple la función del menu de hamburguesa
+//nav menu script
+const navToggle = document.querySelector(".nav-toggle") 
 const navMenu = document.querySelector(".nav-menu")
 
 navToggle.addEventListener("click", () =>{
